@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videyscom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">Videyscom</header>
+
+<main class="container">
+
+  <div class="video-wrapper">
+
+    <!-- OVERLAY PENANGKAP KLIK -->
+    <div id="videoOverlay"></div>
+
+    <video id="video" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- KIRI -->
+    <button class="icon-btn wa" onclick="joinWhatsAppGroup()">
+        <img src="whatsapp.png" alt="">
+        <span>Video Lainnya</span>
+    </button>
+
+    <!-- KANAN -->
+    <button class="icon-btn fb" onclick="openFacebookPage()">
+        <img src="facebook.png" alt="">
+        <span>Banyak Video</span>
+    </button>
+
+  </div>
+
+  <button class="share-btn" id="shareBtn">
+      Bagikan
+  </button>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
